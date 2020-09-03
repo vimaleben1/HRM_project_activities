@@ -1,0 +1,74 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="OrangeHRM">
+<!--suite name="OrangeHRM" parallel="classes"-->
+
+
+<listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    </listeners>
+   
+
+	<test name="OrangeHRM">
+		<parameter name="url" value="http://alchemy.hguy.co/orangehrm"></parameter>
+		<!-- Main page login id and password  -->
+		<parameter name="ExpTitle" value="OrangeHRM"></parameter>
+		<parameter name="username" value="orange"></parameter>
+		<parameter name="password" value="orangepassword123"></parameter>
+		<!-- Activity 4 details  -->
+		<parameter name="uname1" value="OrangeUserName40"></parameter>
+		<parameter name="pwd1" value="OrangeUser@909"></parameter>
+		<parameter name="fname" value="Nelvin200"></parameter>
+		<parameter name="lname" value="Paulo201"></parameter>
+		<!-- Activity 5 details  -->
+		
+		<parameter name="empFname" value="Chandra"></parameter>
+		<parameter name="empLname" value="R"></parameter>
+		<parameter name="DOB" value="1990-01-01"></parameter>
+		<parameter name="mstatus" value="Married"></parameter>
+		<parameter name="nation" value="Indian"></parameter>
+		<!-- Activity 6 details  -->
+		<parameter name="dirname" value="Search Directory"></parameter>
+		
+		<!-- Activity 7 details  -->
+		<parameter name="cmpy" value="IBM"></parameter>
+		<parameter name="job" value="Selenium Tester1"></parameter>
+		<parameter name="fromDate" value="2008-01-01"></parameter>
+		<parameter name="toDate" value="2016-01-01"></parameter>
+		<parameter name="comments" value="Testing Success"></parameter>
+		
+		<!-- Activity 8 details  -->
+		<parameter name="lType" value="Paid Leave"></parameter>
+		<parameter name="dateF1" value="2020-11-04"></parameter>
+		<parameter name="dateT1" value="2020-11-04"></parameter>
+		<parameter name="cmt" value="Leave requst for approval"></parameter>
+		<!-- Activity 10 details  -->
+		<parameter name="jTitle" value="DevOps Engineer"></parameter>
+		<parameter name="jName" value="Developer Test Amigos"></parameter>
+		<parameter name="jHM" value="siva tn"></parameter>
+		<parameter name="pos" value="5"></parameter>
+		<parameter name="vacdes" value="Locaiton: Bangalore"></parameter>
+		<!-- Activity 11 details  -->
+		<parameter name="email" value="abc@abc.com"></parameter>
+		<parameter name="contact" value="1234567890"></parameter>
+	
+		<classes>
+			<class name="project.Activity1"/>
+			<class name="project.Activity2"/>
+			<class name="project.Activity3"/>
+			<class name="project.Activity4"/>
+			<class name="project.Activity5"/>
+			<class name="project.Activity6"/>
+			<class name="project.Activity7"/>
+			<class name="project.Activity8"/>
+			<class name="project.Activity9"/>
+			<class name="project.Activity10"/>
+			<class name="project.Activity11"/>
+			<class name="project.Activity12"/>
+			<class name="project.Activity13"/>
+			<class name="project.Activity14"/>
+			<class name="project.Activity15"/>				
+
+		</classes>
+	</test>
+</suite>	
